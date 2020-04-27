@@ -1,0 +1,9 @@
+$color: red;
+$color1: blue;
+$color2: green;
+
+.div {
+  background-color: $color;
+}
+
+@import "tablas";
