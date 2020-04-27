@@ -14,3 +14,42 @@ $color2: green;
 .div {
   background-color: $color;//asi podemos usar $color sin poner el codigo del color varias veces//
 }
+
+Anidaciones
+Con las Anidaciones podemos crear estilos dentro del estilo padre y asi cuando se compile saldra el estilo nombrado con el estilo padre ejemplo:
+.btn {
+  display: inline-block;
+  color: $buttoncolor;
+  background-color: $buttonbackgroundcolor;
+  .btn__icon{
+    font-size: 6em;
+  }
+  & &__icon{//& con este simbolo podemos nombrar al padre y ya no tendremos que escribirlo
+    font-size: 6em;
+  }
+  .btn--info{
+    background-color: $color-info;
+  }
+}
+
+El resultado sera el siguiente:
+.btn {
+  display: inline-block;
+  color: white;
+  background-color: #ea83ee;
+  line-height: 2.5;
+  border-radius: 4px;
+  font-size: 24px;
+}
+
+.btn .btn__icon {
+  font-size: 6em;
+}
+
+.btn .btn__icon {
+  font-size: 6em;
+}
+
+.btn .btn--info {
+  background-color: #42b8dd;
+}
