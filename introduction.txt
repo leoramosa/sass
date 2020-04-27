@@ -1,0 +1,3 @@
+Curso de sass
+
+@import sirve para importar otro archivos de sass (scss) en el archivo principal para que se refleje en el archivo final de style.css
