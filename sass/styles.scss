@@ -1,5 +1,18 @@
+// librerias, settings and variables
 @import "lib/variables";
+
+//Elements base
 @import "tablas";
+@import "base/buttons";
+@import "base/links";
+@import "base/typography";
+
+//Components
+@import "components/grids";
+
+//Este siempre va de último
+@import "components/utilities";
+
 
 
 $color: red;

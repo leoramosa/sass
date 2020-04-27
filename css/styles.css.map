@@ -1,10 +1,15 @@
 {
     "version": 3,
-    "mappings": "ACAA;;;;;EAKE;ACLF,AAAA,KAAK,CAAC,EAAE,AAAA,MAAM,CAAA;EACZ,gBAAgB,EDOD,OAAkB;CCNlC;;AFMD,AAAA,IAAI,CAAC;EACH,gBAAgB,EALV,GAAG;CAMV",
+    "mappings": "ACAA;;;;;EAKE;ACLF,AAAA,KAAK,CAAC,EAAE,AAAA,MAAM,CAAA;EACZ,gBAAgB,EDOD,OAAkB;CCNlC;;ACFD;;kBAEkB;ACFlB;;kBAEkB;ACFlB;;kBAEkB;ACFlB;;kBAEkB;ANmBlB,AAAA,IAAI,CAAC;EACH,gBAAgB,EALV,GAAG;CAMV",
     "sources": [
         "../sass/styles.scss",
         "../sass/lib/_variables.scss",
-        "../sass/_tablas.scss"
+        "../sass/_tablas.scss",
+        "../sass/base/_buttons.scss",
+        "../sass/base/_links.scss",
+        "../sass/base/_typography.scss",
+        "../sass/components/_grids.scss",
+        "../sass/components/_utilities.scss"
     ],
     "names": [],
     "file": "styles.css"

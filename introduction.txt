@@ -1,3 +1,16 @@
 Curso de sass
 
-@import sirve para importar otro archivos de sass (scss) en el archivo principal para que se refleje en el archivo final de style.css
+@import sirve para importar otro archivos de sass (scss) en el 
+archivo principal para que se refleje en el archivo final de style.css
+
+Variables
+$ usando el signo de dolar podemos crear variables esto nos sirve para hacer una variable
+y poder usarlo en nuestro proyecto varias veces, ejemplo:
+
+$color: red;
+$color1: blue;
+$color2: green;
+
+.div {
+  background-color: $color;//asi podemos usar $color sin poner el codigo del color varias veces//
+}
