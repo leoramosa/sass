@@ -127,8 +127,22 @@ asi podemos utilizar el @extend y el resultado en el css sera el siguiente:
   margin-right: 0;
   margin-left: 0;
 }
-
+            
 .container {
   font-size: 14px;
 }
+
+Funciones
+Sass tiene muchas funciones que podemos usar cuando estamos modificando CSS.
+Muchas de estas funciones son muy útiles como por ejemplo aclarar un color
+u oscurecerlo. Así hay muchísimas más, sin embargo hay algunas que no nos
+permiten hacer cambios visuales y que pueden parecer no tan útiles.
+
+algunas funciones:
+
+darken
+lighten
+invert
+
+
 

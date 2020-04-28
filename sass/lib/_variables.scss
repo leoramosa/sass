@@ -9,14 +9,17 @@ $color-brand: #ea83ee;
 $color-secondary:rgb(219, 216, 121);
 
 $color-black: rgb(0,0,0);
-$color-darkgrey: #4d4d4d;
 $color-grey: #737373;
-$color-lightgrey: #bfbfbf;
+/* $color-darkgrey: #4d4d4d; */ //esta funcione darken oscurece el color que esta en la variable
+$color-darkgrey: darken($color-grey, 25%);
+/* $color-lightgrey: #bfbfbf; */ //esta funcione lighten aclara el color que esta en la variable
+$color-lightgrey: lighten($color-grey, 25%);
 $color-white: rgb(255,255,255);
 
 //Colors Texture
 $color-alert:rgb(252,228,207);
 $color-error: rgb(218,79,73); 
+$color-invert: invert($color-error); 
 $color-info: rgb(66,184,221);
 $color-success: rgb(91,183,91);
 
