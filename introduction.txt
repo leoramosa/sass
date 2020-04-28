@@ -99,3 +99,36 @@ $page-max-width:800px;
 Uso de la directiva `content` (`block` en Stylus)
 Una de las características que tienen los mixins es la directiva content.
 Esta nos permite incluir un bloque de contenido dentro de un mixin.
+
+Extend
+con % creamos placeholder en sass ejemplo:
+
+%max-width{
+  max-width:80%;
+  margin-right:0;
+  margin-left:0;
+}
+
+el codigo anterior no se va a visualizar en css cuando lo compilemos para poder utilizrarlo
+debemos escribir el siguiente codigo de ejemplo:
+
+.section{
+  @extend %max-width;
+}
+
+.container{
+  @extend %max-width;
+  font-size:14px;
+}
+
+asi podemos utilizar el @extend y el resultado en el css sera el siguiente:
+.container, .section {
+  max-width: 80%;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.container {
+  font-size: 14px;
+}
+
