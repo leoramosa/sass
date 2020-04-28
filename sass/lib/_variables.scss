@@ -1,9 +1,9 @@
 /*--------------*\
   $COLORS
 \*--------------*\
-/*
-* Branding Colors
-*/
+
+/* Branding Colors */
+
 
 $color-brand: #ea83ee;
 $color-secondary:rgb(219, 216, 121);
@@ -31,4 +31,6 @@ $buttonfontsize: $basefontsize*1.5;//podermos operaciones matemáticas básicas
 
 //constants
 $border-radius:4px;
+$padding:24px;
+$page-max-width:800px;
 

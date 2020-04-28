@@ -14,7 +14,10 @@
   & &__icon{//& con este simbolo podemos nombrar al padre y ya no tendremos que escribirlo
     font-size: 6em;
   }
-  .btn--info{
+  &__icon{//& con este simbolo podemos nombrar al padre y ya no tendremos que escribirlo
+    font-size: 6em;
+  }
+  &.btn--info{
     background-color: $color-info;
   }
 }

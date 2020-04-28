@@ -53,3 +53,45 @@ El resultado sera el siguiente:
 .btn .btn--info {
   background-color: #42b8dd;
 }
+
+Mixins:
+Los mixins nos permiten rehusar declaraciones e incluso Modificar el valor cuando
+la rehusamos explico un poco más una declaracion nos puede decir que un  color es
+igual a red, nosotros podemos  crear un mixins para que siempre color sea red 
+pero más podemos modificar. Entonces vamos a ver un ejemplo de un mixins 
+vamos a ir incrementando su funcionalidad para ver como hasta dónde podemos 
+llegar con los mixes
+
+creamos un archivo _mixins.scss
+escribimos:
+
+@mixin max-width{
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+y en otro archivos des sasss ejemplo: _layout.scss podemos utilizar lo que esta en
+mixins.scss
+para utilizarlo escribimos @include max-width:
+
+section {
+  @include max-width;
+  background-color: $color-lightgrey;
+  padding: $padding;
+}
+
+Los mixins pueden ser parametricos, pueden ser parametros.
+ejemplo:
+
+@mixin max-width($maxwidth: $page-max-width){//son variables que funcionan en los mixins(unicamentes)
+  //al 800px lo vamos a convertir en varible como practica para seguir usando sass
+  max-width: $maxwidth;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+//constants
+$border-radius:4px;
+$padding:24px;
+$page-max-width:800px;

@@ -1,0 +1,17 @@
+section {
+  @include max-width;
+  background-color: $color-lightgrey;
+  padding: $padding;
+}
+
+.max-width--huge{
+  @include max-width(1200px);
+}
+
+header{
+  background-color: $color-brand;
+}
+
+/* body {
+  @include max-width;
+} */

@@ -1,9 +1,11 @@
 /*--------------*\
   $COLORS
 \*--------------*\
-/*
-* Branding Colors
-*/
+
+/* Branding Colors */
+/*--------------*\
+  $mixins
+\*--------------*/
 table tr:hover {
   background-color: #dbd879;
 }
@@ -28,7 +30,11 @@ table tr:hover {
   font-size: 6em;
 }
 
-.btn .btn--info {
+.btn__icon {
+  font-size: 6em;
+}
+
+.btn.btn--info {
   background-color: #42b8dd;
 }
 
@@ -41,6 +47,27 @@ table tr:hover {
 /*--------------*\
   $Grids
 \*--------------*/
+section {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #bfbfbf;
+  padding: 24px;
+}
+
+.max-width--huge {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  background-color: #ea83ee;
+}
+
+/* body {
+  @include max-width;
+} */
 .div {
   background-color: red;
 }

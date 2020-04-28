@@ -1,0 +1,10 @@
+/*--------------*\
+  $mixins
+\*--------------*/
+
+@mixin max-width($maxwidth: $page-max-width){//son variables que funcionan en los mixins(unicamentes)
+  //al 800px lo vamos a convertir en varible como practica para seguir usando sass
+  max-width: $maxwidth;
+  margin-left: auto;
+  margin-right: auto;
+}
