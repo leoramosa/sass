@@ -95,3 +95,7 @@ ejemplo:
 $border-radius:4px;
 $padding:24px;
 $page-max-width:800px;
+
+Uso de la directiva `content` (`block` en Stylus)
+Una de las características que tienen los mixins es la directiva content.
+Esta nos permite incluir un bloque de contenido dentro de un mixin.

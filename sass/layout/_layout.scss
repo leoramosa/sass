@@ -1,11 +1,15 @@
 section {
   @include max-width;
-  background-color: $color-lightgrey;
+  background-color: blue;
+  @include respond-to(800px){
+    background-color: red;
+  };
+  /* background-color: $color-lightgrey; */
   padding: $padding;
 }
 
 .max-width--huge{
-  @include max-width(1200px);
+  @include max-width(80%);
 }
 
 header{
