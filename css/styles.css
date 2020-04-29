@@ -12,6 +12,38 @@
 /*--------------*\
   $mixins
 \*--------------*/
+.class:before {
+  content: 1;
+}
+
+.class:before {
+  content: 2;
+}
+
+.class:before {
+  content: 3;
+}
+
+.class:before {
+  content: 4;
+}
+
+.class-1:before {
+  content: "1";
+}
+
+.class-2:before {
+  content: "2";
+}
+
+.class-3:before {
+  content: "3";
+}
+
+.class-4:before {
+  content: "4";
+}
+
 table tr:hover {
   background-color: #dbd879;
 }
@@ -50,6 +82,26 @@ table tr:hover {
 /*--------------*\
   $typographys
 \*--------------*/
+blockquote {
+  margin: 0 0 0 0;
+  padding-left: 5px;
+  border-left: 2px solid #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+}
+
+blockquote p {
+  font-size: 16px;
+}
+
+p {
+  z-index: 5;
+}
+
+.sticky {
+  z-index: 120;
+}
+
 /*--------------*\
   $Grids
 \*--------------*/

@@ -3,10 +3,10 @@
 \*--------------*/
 
 blockquote {
-  margin: 0 0 $lineheight 0 ;
-  padding-left: $padding;
-  border-left: 2px solid $color-border;
-  font-family: $altfont;
+  margin: 0 0 0 /* $lineheight */ 0 ;
+  padding-left: 5px /* $padding */;
+  border-left: 2px solid #000000 /* $color-border */;
+  font-family: Arial, Helvetica, sans-serif /* $altfont */;
   font-style: normal;
   p{
     font-size: map-get($fs, normal);

@@ -237,6 +237,56 @@ Resutaldo:
   font-weight: italic;
 }
 
+Ciclos FOR/EACH
+Por medio de la directiva each ustedes van a crear las clases usando el ciclo each.
+La directiva for se parece mucho a la directiva each.
+
+con el termino @for podemos crear el sigueinte codigo:
+
+@for $i from 1 to 5 {
+  .class {
+    &:before {
+    content: $i;
+    }
+  }
+}
+
+El resutlado en el css es el siguiente:
+.class:before {
+  content: 1;
+}
+
+.class:before {
+  content: 2;
+}
+
+.class:before {
+  content: 3;
+}
+
+.class:before {
+  content: 4;
+}
+
+otro ejemplo:
+
+//al usar #{} dentro de una variable podemos escaparla es decir 
+podemos usar la variables en la propiedad y valor de un estilos y el resultado va hacer el mismo solo con algunos 
+cambios que los puedes ver a la hora de compilar el codigo de abajo //
+@for $i from 1 to 5 {
+  .class-#{$i
+    
+  } {
+    &:before {
+    content: "#{$i}";
+    }
+  }
+}
+
+
+
+
+
 
 
 
