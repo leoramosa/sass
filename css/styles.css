@@ -4,6 +4,11 @@
 /* Branding Colors */
 /* $color-darkgrey: #4d4d4d; */
 /* $color-lightgrey: #bfbfbf; */
+/* Directiva */
+.div {
+  padding: 15px;
+}
+
 /*--------------*\
   $mixins
 \*--------------*/

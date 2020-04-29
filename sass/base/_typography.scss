@@ -1,3 +1,22 @@
 /*--------------*\
   $typographys
 \*--------------*/
+
+blockquote {
+  margin: 0 0 $lineheight 0 ;
+  padding-left: $padding;
+  border-left: 2px solid $color-border;
+  font-family: $altfont;
+  font-style: normal;
+  p{
+    font-size: map-get($fs, normal);
+  }
+}
+
+p{
+  z-index:map-get($zi, layer-1);
+}
+
+.sticky{
+  z-index: map-get($zindex, zindex-sticky);
+}

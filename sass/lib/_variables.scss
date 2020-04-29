@@ -37,3 +37,12 @@ $border-radius:4px;
 $padding:24px;
 $page-max-width:800px;
 
+
+/* Directiva */
+@function suma($numero-uno, $numero-dos){
+  @return $numero-uno + $numero-dos;
+}
+
+.div{
+  padding: suma(10px, 5px);
+}

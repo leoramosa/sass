@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../sass/lib/funtions.scss"
+    ],
+    "names": [],
+    "file": "funtions.css"
+}

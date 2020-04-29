@@ -144,5 +144,101 @@ darken
 lighten
 invert
 
+$color-grey: #737373;
+/* $color-darkgrey: #4d4d4d; */ //esta funcione darken oscurece el color que esta en la variable
+$color-darkgrey: darken($color-grey, 25%);
+/* $color-lightgrey: #bfbfbf; */ //esta funcione lighten aclara el color que esta en la variable
+$color-lightgrey: lighten($color-grey, 25%);
+
+$color-error: rgb(218,79,73); 
+$color-invert: invert($color-error); // esta funcione invierte el color
+
+Directiva
+Las funciones nos permiten directamente modificar el valor de ciertas propiedades. 
+Para crear una función vamos a usar el @function.
+
+@function suma($numero-uno, $numero-dos){
+  @return $numero-uno + $numero-dos;
+}
+
+.div{
+  padding: suma(10px, 5px);
+}
+
+Ejemplos de funciones
+
+Las funciones también puede ser extraer valores de un array.
+Una función puede utilizar arrays que son más parecidas a listas.
+Para Sass es más un mapa. En esta clase vamos a aprender a usar mapas
+con los posibles tipos de fuentes que hayan.
+
+Nos sirve para fuentes, tamaños, colores, etc.
+
+$fs: (
+  big:24px,
+  normal:16px,
+  small:14px,
+  x-small:12px,
+);
+
+p{
+  font-size: map-get($fs, normal);
+}
+
+se visualizara asi en el css:
+p {
+  font-size: 16px;
+}
+
+Listas y directiva each
+De ahora en adelante veremos varias directivas de 
+control de flujo dentro de Sass. Por eso en esta clase vamos 
+a hablar sobre cómo usar la directiva each y cómo manejar listas dentro de Sass.
+
+para usar @each usamos el siguiente codigo:
+
+@each $font in (normal, bold, italic){ //con each podemos hacer varios estilos pero con la misma propiedades
+pero con el valor diferente 
+  .#{$font} {font-weight: $font;}
+}
+
+resultado en el css:
+
+.normal {
+  font-weight: normal;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-weight: italic;
+}
+
+ahora para seguir usando terminos de sass vamos hacer una lista para utilizar el codigo anterior ya escrito:
+//creacion de la lisa// para hacer una lista solo demos separarlas por un espacio
+$font-weights: normal bold italic;
+
+@each $font in ($font-weights){
+  .#{$font} {font-weight: $font;}
+}
+
+Resutaldo:
+.normal {
+  font-weight: normal;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.italic {
+  font-weight: italic;
+}
+
+
+
+
 
 
