@@ -1,5 +1,7 @@
 # Practicando Sass
 
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/M4M41O8NC)
+
 `@import` sirve para importar otro archivos de sass (scss) en el archivo principal para que se refleje en el archivo final de style.css
 
 ####Variables
@@ -332,3 +334,5 @@ y ejecutamos el codigo anterior esto nos serviria para cambiar los valores dinam
 	p {
   	text-color: white;
 	}
+
+	[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/M4M41O8NC)
