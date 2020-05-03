@@ -282,3 +282,45 @@ cambios que los puedes ver a la hora de compilar el codigo de abajo //
     }
   }
 }
+
+Directiva @if Condicionales
+Si definimos una variable con un valor:
+
+$background-color:black;
+
+Podemos usar la directiva @if para darle una condicion a esa variable 
+y dentro podemos escribir selector agremos su propidad y su valor, 
+si la condicion es verdadera podemos visualizarlo en a la hora de 
+compilar el css porque si no cumple no se va mostrar, para eso tambien
+podemos usar la directiva @else para asignarle una varialbe con un 
+selector si se requiere o tambien podemos omitir la directa @else si se requiere
+
+@if $background-color == black{
+  p {
+    text-color: white;
+  }
+}
+
+y el resultado en css sera el siguiente:
+
+p {
+  text-color: white;
+}
+
+Aparte podemos usar la cascada si p ya tiene un valor:
+
+p{
+  text-color: black
+}
+
+y ejecutamos el codigo anterior esto nos serviria para cambiar los valores dinamicamente con las Condicionales
+el resultado seria el sigueinte en el css:
+
+p {
+  text-color: black;
+}
+
+p {
+  text-color: white;
+}
+
