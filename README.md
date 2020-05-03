@@ -335,4 +335,4 @@ y ejecutamos el codigo anterior esto nos serviria para cambiar los valores dinam
   	text-color: white;
 	}
 
-	[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/M4M41O8NC)
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/M4M41O8NC)
